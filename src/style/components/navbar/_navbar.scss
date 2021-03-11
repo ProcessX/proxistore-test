@@ -4,50 +4,56 @@
 $navbar-height-mobile: 4rem;
 $tab-icon-size-mobile: 2.5rem;
 
-.navbar {
-    background-color: white;
-    position: fixed;
-    top: calc(#{100vh} - #{$navbar-height-mobile});
-    height: $navbar-height-mobile;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    justify-content: center;
+@include mixin.smaller-than-desktop {
+    .navbar {
+        background-color: white;
+        position: fixed;
+        top: calc(#{100vh} - #{$navbar-height-mobile});
+        height: $navbar-height-mobile;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
 
-    &__menu {
+        .logo--navbar{
+            display: none;
+        }
+
+        .btn--reduceNavbar{
+            display: none;
+        }
     }
-}
 
-.navbar__menu .tab__li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    .navbar__menu .tab__li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
 
-    .tab__el {
+        .tab__el {
+            .tab {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: min-content;
+                color: black;
+                text-decoration: none;
 
-        .tab {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: min-content;
-            color: black;
-            text-decoration: none;
+                &__text {
+                    font-size: fonts.$font-size-m3;
+                }
 
-            &__text{
-                font-size: fonts.$font-size-m3;
-            }
-
-            &__icon{
-                height: $tab-icon-size-mobile;
-                width: $tab-icon-size-mobile;
-                max-width: $tab-icon-size-mobile;
-                background-color: blue;
-                text-indent: 100%;
-                overflow: hidden;
+                &__icon {
+                    height: $tab-icon-size-mobile;
+                    width: $tab-icon-size-mobile;
+                    max-width: $tab-icon-size-mobile;
+                    background-color: blue;
+                    text-indent: 100%;
+                    overflow: hidden;
+                }
             }
         }
     }

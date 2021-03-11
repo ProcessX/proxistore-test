@@ -1,6 +1,12 @@
 @use '../../../lib/mixin';
 @use '../../../lib/fonts';
 
-.mainPageLayout{
+.mainPageLayout {
     min-height: 100vh;
+}
+
+@include mixin.desktop {
+    .mainPageLayout {
+        display: flex;
+    }
 }

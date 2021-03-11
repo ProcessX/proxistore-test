@@ -10,6 +10,8 @@ const LINKS = [
 const Navbar = () => {
     return (
         <div className={'navbar'}>
+            <span className='logo logo--navbar'>Logo</span>
+
             <nav className={'navbar__menu'}>
                 <ul className={'tab__li'}>
                     {LINKS.map((link) => (
@@ -22,6 +24,8 @@ const Navbar = () => {
                     ))}
                 </ul>
             </nav>
+
+            <button className='btn btn--reduceNavbar'>Reduce</button>
         </div>
     )
 }
