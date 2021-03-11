@@ -1,20 +1,39 @@
-import React from "react";
-import { Switch, Route} from 'react-router-dom';
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import Navbar from './components/navbar/Navbar'
+import Home from './components/pages/home/Home';
+import Help from './components/pages/help/Help';
+import CampaignListing from './components/pages/campaignListing/CampaignListing'
+import CampaignDetails from './components/pages/campaignDetails/CampaignDetails';
+
 
 const App = () => {
-  // return (
-    
-  //   <>
-  //     <h1>Welcome to React Parcel Micro App!</h1>
-  //     <p>Hard to get more minimal than this React app.</p>
-  //   </>
-  // );
-  
-  return <Switch>
-    <Route exact path="/">
-      <h1>This is Home page</h1>
-    </Route>
-  </Switch>
-};
+    return (
+        <div>
+            <Navbar />
+            <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
 
-export default App;
+                <Route exact path="/help">
+                    <Help />
+                </Route>
+
+                <Route exact path="/campaigns">
+                    <CampaignListing />
+                </Route>
+
+                <Route exact path="/campaign-details">
+                    <CampaignDetails />
+                </Route>
+
+                <Route>
+                    <h1>404</h1>
+                </Route>
+            </Switch>
+        </div>
+    )
+}
+
+export default App
