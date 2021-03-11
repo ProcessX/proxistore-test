@@ -2,11 +2,19 @@
 @use '../../../lib/fonts';
 
 .mainPageLayout {
-    min-height: 100vh;
+    .mainPageLayout__content {
+        min-height: 100vh;
+        margin: 0 1rem;
+    }
 }
 
 @include mixin.desktop {
     .mainPageLayout {
         display: flex;
+
+        .mainPageLayout__content {
+            flex-grow: 1;
+            max-height: 100vh;
+        }
     }
 }

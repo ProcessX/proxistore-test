@@ -6,8 +6,8 @@ const MainPageLayout = ({ children }) => {
     return (
         <div className={'mainPageLayout'}>
             <Navbar />
-            
-            {children}
+
+            <div className="mainPageLayout__content">{children}</div>
         </div>
     )
 }

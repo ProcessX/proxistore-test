@@ -3,6 +3,34 @@
 
 $navbar-height-mobile: 4rem;
 $tab-icon-size-mobile: 2.5rem;
+$tab-icon-size-desktop: 1.5rem;
+
+.navbar {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.navbar__menu .tab__li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .tab__el {
+        .tab {
+            text-decoration: none;
+            font-weight: 700;
+            display: flex;
+
+            &__icon {
+                display: inline-block;
+                background-color: blue;
+                text-indent: 100%;
+                overflow: hidden;
+            }
+        }
+    }
+}
 
 @include mixin.smaller-than-desktop {
     .navbar {
@@ -16,31 +44,26 @@ $tab-icon-size-mobile: 2.5rem;
         justify-items: center;
         justify-content: center;
 
-        .logo--navbar{
+        .logo--navbar {
             display: none;
         }
 
-        .btn--reduceNavbar{
+        .btn--reduceNavbar {
             display: none;
         }
     }
 
     .navbar__menu .tab__li {
-        list-style: none;
-        margin: 0;
-        padding: 0;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
 
         .tab__el {
             .tab {
-                display: flex;
+                
                 flex-direction: column;
                 align-items: center;
                 width: min-content;
-                color: black;
-                text-decoration: none;
 
                 &__text {
                     font-size: fonts.$font-size-m3;
@@ -50,9 +73,44 @@ $tab-icon-size-mobile: 2.5rem;
                     height: $tab-icon-size-mobile;
                     width: $tab-icon-size-mobile;
                     max-width: $tab-icon-size-mobile;
-                    background-color: blue;
-                    text-indent: 100%;
-                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+@include mixin.desktop {
+    .navbar {
+        padding: 1rem;
+        justify-content: space-between;
+    }
+
+    .navbar__menu .tab__li {
+        .tab__el {
+            margin-bottom: 0.5rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .tab {
+                padding: fonts.$font-size-m3;
+                border-radius: 0.25rem;
+
+                &__text {
+                }
+
+                &__icon {
+                    height: $tab-icon-size-desktop;
+                    width: $tab-icon-size-desktop;
+                    max-width: $tab-icon-size-desktop;
+                    margin-right: fonts.$font-size-m3;
+                }
+
+                &:not(.tab--active){
+                    &:hover{
+                        background-color: gray;
+                    }
                 }
             }
         }
