@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import MainPageLayout from '../mainPageLayout/MainPageLayout';
 
 const CampaignDetails = () => {
     return (
-        <div>
+        <MainPageLayout>
             <h1>Campaign Details</h1>
-        </div>
+        </MainPageLayout>
     )
 }
 

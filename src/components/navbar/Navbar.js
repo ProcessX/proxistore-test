@@ -10,9 +10,8 @@ const LINKS = [
 const Navbar = () => {
     return (
         <div>
-            <p>Testeu</p>
             <nav>
-                <ul>
+                <ul className={'test'}>
                     {LINKS.map((link) => (
                         <li key={link.to}>
                             <Link to={link.to}>{link.text}</Link>

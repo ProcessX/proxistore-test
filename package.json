@@ -17,6 +17,7 @@
         "react-router-dom": "^5.2.0"
     },
     "devDependencies": {
+        "@parcel/transformer-sass": "^2.0.0-nightly.625",
         "babel-preset-nano-react-app": "^0.1.0",
         "eslint": "^7.21.0",
         "eslint-plugin-react": "^7.22.0",
