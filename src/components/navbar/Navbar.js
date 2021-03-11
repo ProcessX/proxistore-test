@@ -11,10 +11,13 @@ const Navbar = () => {
     return (
         <div className={'navbar'}>
             <nav className={'navbar__menu'}>
-                <ul className={'link__li'}>
+                <ul className={'tab__li'}>
                     {LINKS.map((link) => (
-                        <li key={link.to} className={'link__el'}>
-                            <Link to={link.to} className={'link'}>{link.text}</Link>
+                        <li key={link.to} className={'tab__el'}>
+                            <Link to={link.to} className={'tab'}>
+                                <span className='tab__icon'>Icon</span>
+                                <span className='tab__text'>{link.text}</span>
+                            </Link>
                         </li>
                     ))}
                 </ul>

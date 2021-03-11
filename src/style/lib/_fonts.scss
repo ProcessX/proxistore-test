@@ -1,6 +1,11 @@
 $font-size-rem: 18px;
 $font-scaling-ratio: 1.15;
 
+$font-size-m1: $font-size-rem / $font-scaling-ratio;
+$font-size-m2: $font-size-m1 / $font-scaling-ratio;
+$font-size-m3: $font-size-m2 / $font-scaling-ratio;
+
 html{
     font-size: $font-size-rem;
+    font-family: 'Poppins', sans-serif;
 }
