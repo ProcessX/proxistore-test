@@ -1,0 +1,13 @@
+@use '../../lib/mixin';
+@use '../../lib/fonts';
+
+.campaignListing {
+    .campaignListing__head{
+        &::after{
+            content: '';
+            display: block;
+            height: 1px;
+            background-color: black;
+        }
+    }
+}
