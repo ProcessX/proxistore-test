@@ -7,7 +7,16 @@ const CampaignList = () => {
             CampaignList
             <ul className={'campaignThumbnail__li'}>
                 <li className={'campaignThumbnail__el'}>
-                    <CampaignThumbnail/>
+                    <CampaignThumbnail />
+                </li>
+                <li className={'campaignThumbnail__el'}>
+                    <CampaignThumbnail />
+                </li>
+                <li className={'campaignThumbnail__el'}>
+                    <CampaignThumbnail />
+                </li>
+                <li className={'campaignThumbnail__el'}>
+                    <CampaignThumbnail />
                 </li>
             </ul>
         </div>

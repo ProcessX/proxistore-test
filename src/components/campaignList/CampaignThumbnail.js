@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const CampaignThumbnail = () => {
     return (
-        <Link>
-            <h3>Campaign's name</h3>
-            <p>Campaign's ID</p>
-            <p>Status</p>
+        <Link className={'campaignThumbnail'}>
+            <p className={'campaign__status'}>Status</p>
+            <h3 className={'campaign__name'}>Campaign's name</h3>
+            <p className={'campaign__id'}>Campaign's ID</p>
         </Link>
     )
 }

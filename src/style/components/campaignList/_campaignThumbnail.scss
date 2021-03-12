@@ -1,0 +1,27 @@
+@use '../../lib/mixin';
+@use '../../lib/colors';
+@use '../../lib/fonts';
+
+.campaignThumbnail{
+    display: block;
+    background-color: red;
+    border-radius: 0.5rem;
+    border: solid 1px red;
+    padding: 1rem;
+    text-decoration: none;
+
+    * {
+        margin: 0;
+    }
+
+    .campaign__status{
+        background-color: gray;
+        padding: 0.25rem 1rem;
+        display: inline-block;
+        border-radius: 1rem;
+    }
+
+    &:hover{
+        border-color: black;
+    }
+}
