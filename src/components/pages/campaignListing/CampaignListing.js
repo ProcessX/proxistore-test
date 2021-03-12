@@ -4,7 +4,7 @@ import BtnRectangle from '../../btn/btnRectangle';
 import Searchbar from './Searchbar';
 import SortingParamSelector from './SortingParamSelector';
 import PageNav from './PageNav';
-import CampaignList from './CampaignList';
+import CampaignList from '../../campaignList/CampaignList';
 
 const CampaignListing = () => {
     return (
@@ -19,7 +19,7 @@ const CampaignListing = () => {
                         <PageNav />
                     </div>
                 </div>
-                <CampaignList />
+                <CampaignList/>
             </div>
         </MainPageLayout>
     )

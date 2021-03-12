@@ -9,5 +9,27 @@
             height: 1px;
             background-color: black;
         }
+
+        .title--page{
+            margin-top: 0;
+        }
+    }
+}
+
+.campaignListing__tools{
+    min-width: 100%;
+    display: flex;
+}
+
+@include mixin.tablet{
+    .campaignListing{
+        .campaignListing__head{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .btn--rectangle{
+            }
+        }
     }
 }

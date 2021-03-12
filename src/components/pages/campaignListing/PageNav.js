@@ -2,7 +2,7 @@ import React from 'react';
 
 const PageNav = () => {
     return (
-        <div>
+        <div className={'pageNav'}>
             Page Nav
         </div>
     )

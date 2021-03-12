@@ -2,7 +2,7 @@ import React from 'react';
 
 const SortingParamSelector = () => {
     return (
-        <div>
+        <div className={'sortingParamSelector'}>
             SortingParamSelector
         </div>
     )
