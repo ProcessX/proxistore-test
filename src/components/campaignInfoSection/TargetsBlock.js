@@ -2,9 +2,9 @@ import React from 'react'
 import InfoBlock from './InfoBlock'
 
 // eslint-disable-next-line react/prop-types
-const TargetsBlock = ({title}) => {
+const TargetsBlock = () => {
     return (
-        <InfoBlock title={title}>
+        <InfoBlock title={'Targets'}>
             Target
         </InfoBlock>
     )
