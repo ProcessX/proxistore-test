@@ -1,6 +1,6 @@
 import React from 'react';
 import MainPageLayout from '../mainPageLayout/MainPageLayout';
-import BtnRectangle from '../../btn/btnRectangle';
+import BtnRectangle from '../../btn/BtnRectangle';
 import Searchbar from './Searchbar';
 import SortingParamSelector from './SortingParamSelector';
 import PageNav from './PageNav';
