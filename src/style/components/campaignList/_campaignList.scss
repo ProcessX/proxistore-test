@@ -14,9 +14,15 @@
     row-gap: 1rem;
 }
 
-@include mixin.smaller-than-desktop {
+@include mixin.tablet {
     .campaignThumbnail__li {
         grid-template-columns: 1fr 1fr;
         column-gap: 1rem;
+    }
+}
+
+@include mixin.desktop {
+    .campaignThumbnail__li {
+        grid-template-columns: 1fr;
     }
 }
