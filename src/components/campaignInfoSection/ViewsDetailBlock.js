@@ -3,7 +3,7 @@ import InfoBlock from './InfoBlock'
 
 const ViewsDetailBlock = () => {
     return (
-        <InfoBlock title={'Views Detail'}>
+        <InfoBlock className={'viewsDetailBlock'} title={'Views Detail'}>
             <p>Pie Chart</p>
         </InfoBlock>
     )

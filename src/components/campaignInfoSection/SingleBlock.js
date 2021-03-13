@@ -4,7 +4,7 @@ import InfoBlock from './InfoBlock';
 // eslint-disable-next-line react/prop-types
 const SingleBlock = ({title, value}) => {
     return (
-        <InfoBlock title={title}>
+        <InfoBlock className={'singleBlock'} title={title}>
             <p className='singleInfo'>{value}</p>
         </InfoBlock>
     )
